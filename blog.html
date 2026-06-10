@@ -1,107 +1,446 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>가양 셔츠룸 보안 칼럼: 빅브라더의 눈을 피하는 법 | 가양 BRO NEON YELLOW</title>
-  <meta name="description" content="가양 셔츠룸 추천 및 실시간 예약 꿀팁. 에드워드 스노든의 NSA 감시망 폭로 비하인드를 엮어 파헤친 유흥 정보 시장의 익명성 수호 철학.">
-  <meta name="keywords" content="가양 셔츠룸 꿀팁, 가양 유흥 칼럼, 스노든 프라이버시">
-  <link rel="canonical" href="https://t3b05-gy-shirts-rc-1.pages.dev/blog.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가양 셔츠룸 추천 | 블로그</title>
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="가양 셔츠룸 추천 블로그입니다. 직접 경험한 세 곳의 솔직 후기와 꿀팁을 공유합니다. 가성비, 분위기, 서비스 모두 비교해드려요.">
+    <meta name="keywords" content="가양 셔츠룸, 가양 셔츠룸 추천, 가양 셔츠룸 후기, 가양 역 셔츠룸, 가양 셔츠 맛집, 셔츠룸 가격, 가양 나이트">
+    <link rel="canonical" href="https://t3b05-gy-shirts-rc-1.vercel.app">
+    <meta property="og:title" content="가양 셔츠룸 추천 | 블로그">
+    <meta property="og:description" content="가양에서 진짜 셔츠룸 찾는다면? 내가 직접 가본 셔츠룸 세 군데 솔직 후기! 서비스, 분위기, 가격까지 다 까발림. 형아들이 인정한 가양 셔츠룸 추천 리스트 공개.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-gy-shirts-rc-1.vercel.app">
+    <meta property="og:locale" content="ko_KR">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: #ff3b4a;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            border-bottom-color: #ff3b4a;
+            color: #ff5c6a;
+        }
+        ul {
+            list-style: none;
+        }
 
-  <style>
-    :root {
-      --primary: #0A0A02;
-      --secondary: #222205;
-      --accent: #FFFF00;
-      --bg: #030301;
-      --text: #FFFFF0;
-      --font: 'Pretendard', -apple-system, sans-serif;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font);
-      line-height: 1.8;
-      letter-spacing: -0.02em;
-    }
-    a { color: var(--accent); text-decoration: none; transition: 0.3s; }
-    a:hover { filter: brightness(1.2); }
-    .header {
-      backdrop-filter: blur(15px);
-      background: rgba(10, 10, 2, 0.85);
-      border-bottom: 1px solid rgba(255, 255, 0, 0.25);
-      position: sticky; top:0; z-index:100; padding: 15px 24px;
-    }
-    .header-inner {
-      max-width: 1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;
-    }
-    .logo { font-size:1.3rem; font-weight:900; color:var(--accent); text-shadow: 0 0 10px rgba(255, 255, 0, 0.6); }
-    .nav { display:flex; gap:20px; font-size:0.9rem; }
-    .nav a { color: rgba(255, 255, 240, 0.8); font-weight:600; }
-    .nav a:hover { color: var(--accent); }
+        /* ===== VARIABLES ===== */
+        :root {
+            --accent: #ff3b4a;
+            --accent-hover: #ff5c6a;
+            --bg-dark: #0a0a0a;
+            --bg-card: #141414;
+            --bg-section: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --border-color: #2a2a2a;
+            --font-mono: 'SF Mono', 'Fira Code', monospace;
+            --container-max: 1200px;
+            --gap: 1.5rem;
+        }
 
-    .main { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
-    .post-header { margin-bottom: 40px; border-bottom: 1px solid rgba(255, 255, 0, 0.15); padding-bottom: 20px; }
-    .post-title { font-size: 2.3rem; font-weight:900; color: #fff; line-height: 1.3; text-shadow: 0 0 10px rgba(255, 255, 0, 0.3); }
-    .post-meta { font-size: 0.9rem; opacity: 0.7; margin-top: 10px; }
-    .post-content { font-size: 1.05rem; opacity: 0.95; }
-    .post-content p { margin-bottom: 24px; }
-    .post-content blockquote {
-      border-left: 4px solid var(--accent); padding-left: 20px; margin: 30px 0; font-style: italic; opacity: 0.9;
-    }
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+        section {
+            padding: 4rem 0;
+        }
+        section + section {
+            border-top: 1px solid var(--border-color);
+        }
 
-    .footer {
-      background: #050501; border-top: 1px solid rgba(255, 255, 0, 0.2); padding: 48px 24px; text-align:center; font-size:0.9rem; opacity:0.8;
-    }
-    .footer p { margin-bottom: 12px; }
-  </style>
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.8rem 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            border: none;
+        }
+        nav .logo span {
+            color: var(--accent);
+        }
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: var(--text-secondary);
+            border: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        nav a.active {
+            color: var(--accent);
+        }
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            padding: 6rem 0 4rem;
+            background: radial-gradient(ellipse at center, #1a1a1a 0%, #0a0a0a 70%);
+        }
+        .hero h1 {
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .hero .meta {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .hero .meta span::before {
+            content: '▸';
+            color: var(--accent);
+            margin-right: 0.5rem;
+        }
+
+        /* ===== BLOG POST ===== */
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .blog-post .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .blog-post .card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(255, 59, 74, 0.1);
+        }
+        .blog-post .card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+        .blog-post .card .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        .blog-post .card ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            list-style: none;
+        }
+        .blog-post .card ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .blog-post .card ul li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .blog-post .card .tag {
+            display: inline-block;
+            background: #222;
+            color: #aaa;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+            margin-bottom: 0.4rem;
+            border: 1px solid #333;
+        }
+
+        .blog-post .faq {
+            margin: 3rem 0;
+        }
+        .blog-post .faq details {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .blog-post .faq details[open] {
+            border-color: var(--accent);
+        }
+        .blog-post .faq summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .blog-post .faq summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+            transition: transform 0.3s;
+        }
+        .blog-post .faq details[open] summary::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        .blog-post .faq .faq-answer {
+            padding-top: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .blog-post .cta {
+            text-align: center;
+            background: var(--bg-card);
+            border: 2px dashed var(--accent);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        .blog-post .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post .cta .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .blog-post .cta .btn:hover {
+            background: var(--accent-hover);
+            transform: scale(1.05);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            text-align: center;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        footer .links a {
+            color: #777;
+            border: none;
+        }
+        footer .links a:hover {
+            color: var(--accent);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            nav .container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .hero {
+                padding: 4rem 0 2rem;
+            }
+            .hero .meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .blog-post .card {
+                padding: 1.5rem;
+            }
+            .blog-post .cta {
+                padding: 1.5rem;
+            }
+            footer .links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 2rem 0;
+            }
+            .blog-post .card h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">가양 BRO NEON YELLOW</a>
-      <nav class="nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">추천칼럼</a>
-      </nav>
+<nav>
+    <div class="container">
+        <a href="/" class="logo">셔츠<span>룸</span>가이드</a>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/추천">추천</a></li>
+            <li><a href="/후기">후기</a></li>
+            <li><a href="/블로그" class="active">블로그</a></li>
+            <li><a href="/문의">문의</a></li>
+        </ul>
     </div>
-  </header>
+</nav>
 
-  <main class="main">
-    <article>
-      <div class="post-header">
-        <h1 class="post-title">가양 밤거리의 빅브라더 격파: 셔츠룸 이용할 때 프라이버시가 생명인 이유</h1>
-        <div class="post-meta">작성일: 2026년 5월 27일 | 작성자: 마이닝 대장 bro</div>
-      </div>
-      
-      <div class="post-content">
-        <p>
-          형들 안녕? 솔직히 밤늦게 한잔하고 재미있게 놀러 가면서 머리 아픈 정치적 음모론이나 개인정보 감시 같은 얘기를 꺼내면 뜬금없다고 생각할 수 있을 거야. 하지만 2013년 전 세계를 충격에 빠뜨렸던 에드워드 스노든의 NSA 무차별 개인정보 수집(PRISM) 폭로 사건을 조금이라도 안다면, 우리의 사소한 라이프 스타일조차 얼마나 정교한 빅데이터 추적에 노출되어 있는지 실감하게 될 거야.
-        </p>
-        <p>
-          가양역 사거리 밤거리나 셔츠룸 유흥 정보도 예외는 아냐. 형들이 대충 길거리에서 호객꾼(삐끼)이나 실체 없는 바이럴 블로그 링크를 클릭하는 순간, 형들의 번호와 선호 코스는 쥐도 새도 모르게 데이터로 박제되어 요금 장난질과 꼼수 팁을 붙여 먹는 호구 매핑 리스트로 전송되곤 하지.
-        </p>
-        <blockquote>
-          "정직한 가격과 보안을 보장하지 못하는 밤문화는 결국 개인정보와 지갑을 통째로 털어가는 감시망과 다름없다."
-        </blockquote>
-        <p>
-          스노든이 정보의 사유화를 막고 완전한 보안 소통(암호화)을 추구했듯, 우리도 이 지저분한 유흥 시장에 '익명성과 정찰제'라는 강력한 쉴드 프로토콜을 도입하려 해. 현장 꼼수나 삐끼들의 허위 호객을 싹 걷어내고, 철저하게 고정 요율을 지키는 프리미엄 업소 라인만 제공받는 것! 그것이 가양에서 형들의 지갑과 소중한 사생활 프라이버시를 안전하게 철벽 방어하는 유일한 해법이야.
-        </p>
-        <p>
-          어설픈 낚시글에 낚여서 사생활 유출 걱정하지 말고, 의심스러운 상황이나 투명한 웨이팅 타임을 알고 싶다면 망설임 없이 📞 <strong>010-6279-0862</strong> 익명 핫라인으로 한 방 쏴 줘. 스노든 쉴드급의 확실한 로컬 실장 케어로 형들을 내상 걱정 제로의 안전구역으로 안내해 줄게.
-        </p>
-      </div>
-    </article>
-  </main>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>가양 셔츠룸 추천 블로그</h1>
+            <p>직접 가보고 느낀 솔직한 후기만 모았습니다. 거품 뺀 정보, 형아들만 알려줌.</p>
+            <div class="meta">
+                <span>2025.03.10 업데이트</span>
+                <span>가양 · 셔츠룸</span>
+                <span>읽는 시간 5분</span>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
-    <p><strong>가양 셔츠룸 정찰제 추천 정보 플랫폼</strong></p>
-    <p>실시간 예약 및 보안 핫라인: 📞 <a href="tel:010-6279-0862" style="color:var(--accent); font-weight:bold;">010-6279-0862</a></p>
-    <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">&copy; 2026 가양 BRO. All Rights Reserved.</p>
-  </footer>
+    <section>
+        <div class="container blog-post">
+            <h2>가양 셔츠룸, 내가 직접 경험한 3곳의 진실</h2>
+            <p class="subtitle">거품 빼고 말한다. 이게 진짜야.</p>
 
+            <p>야, 가양에서 셔츠룸 알아보고 있냐? 나도 처음엔 인터넷 뒤져봤는데 가짜 후기 천지더라. 그래서 내 발로 뛰었다. 세 군데 직접 가보고 돈 내고 서비스 받아본 솔직 후기다. 가격, 분위기, 서비스, 그리고 현장에서 느낀 모모모임 점까지 다 까발린다. 형아들이 참고할 만한 정보니까 정독하셈.</p>
+
+            <div class="card">
+                <span class="badge">🔥 추천 1순위</span>
+                <h3>더블랙 (The Black)</h3>
+                <p><strong>위치:</strong> 가양역 3번 출구 도보 3분</p>
+                <p><strong>가격대:</strong> 1시간 13만원 ~ 2시간 22만원</p>
+                <ul>
+                    <li>인테리어 깔끔, 블랙 톤으로 고급스러움</li>
+                    <li>셔츠 종류 다양, 와이셔츠부터 캐주얼까지</li>
+                    <li>매니저 서비스: 9/10 (진짜 친절하고 눈치 없음)</li>
+                    <li>음료 무료 리필, 안주도 나쁘지 않음</li>
+                    <li>단점: 예약 없으면 웨이팅 기본 30분</li>
+                </ul>
+                <p><span class="highlight">총평:</span> 가성비 갑은 아니지만, 분위기와 서비스로 승부본다. 첫 방문이면 여기 추천. 형아들이랑 가기에 딱 좋아.</p>
+                <div>
+                    <span class="tag">#분위기최
 </body>
 </html>
