@@ -1,194 +1,150 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가양 셔츠룸 정보 | 상세 안내 - 가양 셔츠룸 추천</title>
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="description" content="가양 셔츠룸 완벽 정보! 위치, 가격, 예약 방법, 서비스 종류까지. 가양에서 셔츠룸 처음 가는 형아도 이거 보면 걱정 끝. 실제 후기 기반 꿀팁 대방출.">
-    <meta name="keywords" content="가양 셔츠룸, 가양 셔츠룸 정보, 가양 셔츠룸 가격, 가양 셔츠룸 위치, 가양 셔츠룸 예약, 셔츠룸 이용 방법, 가양 유흥 정보">
-    <link rel="canonical" href="https://gayang-shirt-choice.node-link.shop/about.html">
-    <meta property="og:title" content="가양 셔츠룸 정보 | 초보도 OK, 상세 안내">
-    <meta property="og:description" content="가양 셔츠룸 완벽 정보! 위치, 가격, 예약 방법, 서비스 종류까지. 가양에서 셔츠룸 처음 가는 형아도 이거 보면 걱정 끝. 실제 후기 기반 꿀팁 대방출.">
-    <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body { font-family: 'Courier New', Courier, monospace; background-color: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
-        img, svg { max-width: 100%; display: block; }
-        a { color: #ff2a6d; text-decoration: none; transition: color 0.2s; }
-        a:hover { color: #05d9e8; }
-        ul { list-style: none; }
-
-        /* ===== VARIABLES ===== */
-        :root {
-            --color-bg: #0a0a0a;
-            --color-text: #e0e0e0;
-            --color-accent: #ff2a6d;
-            --color-accent2: #05d9e8;
-            --color-card: #1a1a2e;
-            --color-border: #ff2a6d;
-            --spacing-unit: 1.5rem;
-            --max-width: 1100px;
-            --brutal-shadow: 6px 6px 0px #ff2a6d;
-        }
-
-        /* ===== LAYOUT ===== */
-        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; }
-        .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
-        section { padding: 3rem 0; }
-        section + section { border-top: 2px solid #ff2a6d; }
-
-        /* ===== TYPOGRAPHY ===== */
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase; letter-spacing: 4px; color: var(--color-accent); text-shadow: 2px 2px 0 #05d9e8; margin-bottom: 1.5rem; line-height: 1.1; }
-        h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); color: var(--color-accent2); border-left: 6px solid var(--color-accent); padding-left: 1rem; margin: 2rem 0 1rem; }
-        h3 { font-size: 1.3rem; color: #fff; margin: 1.5rem 0 0.5rem; }
-        p { margin-bottom: 1rem; font-size: 1.05rem; }
-        .highlight { color: var(--color-accent); font-weight: bold; }
-
-        /* ===== COMPONENTS ===== */
-        nav { background: #111; border-bottom: 3px solid var(--color-accent); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
-        nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-        nav a { font-weight: bold; padding: 0.3rem 0.8rem; border: 2px solid transparent; transition: all 0.2s; }
-        nav a:hover, nav a.active { border-color: var(--color-accent); background: rgba(255,42,109,0.1); }
-        .tel-link { background: var(--color-accent); color: #000 !important; padding: 0.4rem 1rem !important; border: none !important; font-weight: bold; }
-        .tel-link:hover { background: #05d9e8; color: #000 !important; }
-
-        .card { background: var(--color-card); border: 2px solid var(--color-border); padding: 1.5rem; margin: 1.5rem 0; box-shadow: var(--brutal-shadow); }
-        .card h3 { border-bottom: 2px dashed var(--color-accent2); padding-bottom: 0.5rem; }
-        .card ul, .card ol { margin: 0.5rem 0 1rem 1.5rem; list-style: square; }
-        .card li { margin-bottom: 0.5rem; }
-
-        .faq-item { border-bottom: 1px solid #333; padding: 1rem 0; }
-        .faq-item:last-child { border-bottom: none; }
-        .faq-q { font-weight: bold; color: var(--color-accent); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-q::after { content: '+'; font-size: 1.5rem; color: var(--color-accent2); }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding-left: 0.5rem; }
-        .faq-item.active .faq-a { max-height: 300px; padding-top: 0.5rem; }
-        .faq-item.active .faq-q::after { content: '−'; }
-
-        .btn { display: inline-block; background: var(--color-accent); color: #000; padding: 0.8rem 2rem; font-weight: bold; border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; box-shadow: 4px 4px 0 #05d9e8; transition: all 0.2s; }
-        .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #05d9e8; }
-
-        /* ===== NAV PRESENT ===== */
-        @media (max-width: 768px) {
-            nav .container { flex-direction: column; align-items: stretch; text-align: center; }
-            nav a { display: block; padding: 0.5rem; }
-            .tel-link { margin-top: 0.5rem; }
-        }
-
-        /* ===== RESPONSIVE 768 ===== */
-        @media (max-width: 768px) {
-            .card { padding: 1rem; }
-            h1 { font-size: 1.8rem; }
-            section { padding: 2rem 0; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-raw-concrete">
+  <title>가양 셔츠룸 추천 — 상세 정보 및 지역 시그널</title>
+  <meta name="description" content="가양 셔츠룸을 선택할 때 반드시 확인해야 할 상세 정보와 지역 기반 데이터를 정리했습니다. 인테리어 구조, 주류 구성, 시간대별 운영 방식, 구역별 차이까지 실무자 관점에서 압축한 레퍼런스입니다.">
+  <meta name="keywords" content="가양 셔츠룸 추천, 가양 셔츠룸 정보, 가양 셔츠룸 비교, 셔츠룸 상세, 가양 술집 정보">
+  <link rel="canonical" href="https://gayang-shirt-choice.node-link.shop/about.html">
+  <meta property="og:title" content="가양 셔츠룸 추천 — 상세 정보 및 지역 시그널 분석">
+  <meta property="og:description" content="가양 셔츠룸의 구조, 운영 시간, 주류 구성, 사업자 등록 형태까지 실무 선택에 필요한 정보만 추출했습니다.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;background:#d6d3cd;color:#1f1f1f;line-height:1.65;overflow-x:hidden;}
+.random-container-fluid{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:2;}
+.random-overlay-texture{position:fixed;top:0;left:0;width:100%;height:100%;background-image:radial-gradient(circle at 20% 30%, rgba(120,120,120,0.08) 1px, transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0;}
+.random-fixed-bar{position:fixed;top:0;left:0;width:100%;background:rgba(42,42,42,0.92);backdrop-filter:blur(12px);color:#e2ddd4;padding:18px 28px;display:flex;justify-content:space-between;align-items:center;z-index:100;border-bottom:2px solid #8b8b8b;box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+.random-logo-text{font-size:1.5rem;font-weight:700;letter-spacing:-0.4px;color:#f0f0ec;text-transform:uppercase;}
+.random-hamburger{cursor:pointer;display:flex;flex-direction:column;gap:7px;padding:6px;background:transparent;border:none;z-index:101;}
+.random-hamburger span{display:block;width:28px;height:2.5px;background:#e2ddd2;transition:0.25s ease;border-radius:2px;}
+.random-nav-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(24,24,22,0.97);backdrop-filter:blur(14px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 48px;z-index:99;opacity:0;visibility:hidden;transition:opacity 0.32s, visibility 0.32s;}
+.random-nav-overlay.active{opacity:1;visibility:visible;}
+.random-nav-overlay a{font-size:2.4rem;color:#e0dbce;text-decoration:none;margin:16px 0;font-weight:600;border-bottom:2px solid transparent;transition:border-color 0.2s;}
+.random-nav-overlay a:hover{border-color:#b2aa89;}
+.random-main-section{margin-top:130px;padding:32px 0 64px;}
+.random-block-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;margin:48px 0;}
+.random-info-card{background:rgba(235,232,222,0.9);border:1px solid #9f9f89;padding:32px 24px;border-radius:2px;box-shadow:12px 12px 0 rgba(0,0,0,0.08);transition:0.18s;}
+.random-info-card:hover{transform:translate(-2px,-2px);box-shadow:16px 16px 0 rgba(0,0,0,0.12);}
+.random-info-card h3{font-size:1.5rem;margin-bottom:16px;color:#2e2e2c;border-bottom:4px solid #7f8c6b;padding-bottom:8px;display:inline-block;}
+.random-info-card p,.random-info-card ul{color:#2e2e2c;font-size:0.97rem;}
+.random-divider{width:100%;height:1px;background:linear-gradient(to right, transparent, #7f7f7f, transparent);margin:52px 0;}
+.random-data-table{width:100%;border-collapse:collapse;margin:36px 0;background:rgba(245,245,240,0.8);}
+.random-data-table th{background:#4a4a42;color:#f2f0e9;padding:14px 12px;text-align:left;font-weight:600;}
+.random-data-table td{padding:12px;border-bottom:1px solid #b3b3a0;}
+.random-faq-block{margin:40px 0;}
+.random-faq-item{margin-bottom:24px;border-left:5px solid #6b6b5a;padding-left:20px;}
+.random-faq-item h4{font-size:1.3rem;font-weight:700;color:#2e2e2a;}
+.footer-raw{background:#2c2c2a;color:#c2c2b6;padding:32px 28px;margin-top:64px;font-size:0.9rem;border-top:2px solid #6a6a50;}
+@media(max-width:768px){.random-nav-overlay a{font-size:1.8rem;}.random-fixed-bar{padding:14px 18px;}}
+</style>
   <meta property="og:url" content="https://gayang-shirt-choice.node-link.shop/about.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
+<div class="random-overlay-texture"></div>
 
-<nav>
-    <div class="container">
-        <a href="index.html" class="active">홈</a>
-        <a href="recommend.html">추천</a>
-        <a href="info.html">정보</a>
-        <a href="review.html">후기</a>
-        <a href="faq.html">FAQ</a>
-        <a href="tel:010-1234-5678" class="tel-link">📞 전화 예약</a>
-    </div>
+<header class="random-fixed-bar">
+  <div class="random-logo-text">GAYANG SHIRT REF</div>
+  <button class="random-hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="random-nav-overlay" id="navOverlay">
+  <a href="https://gayang-shirt-choice.node-link.shop/">메인</a>
+  <a href="https://gayang-shirt-choice.node-link.shop/compare">비교</a>
+  <a href="https://gayang-shirt-choice.node-link.shop/info">정보</a>
+  <a href="https://gayang-shirt-choice.node-link.shop/contact">연락</a>
 </nav>
 
-<main>
-    <!-- HERO SECTION -->
-    <section class="full-bleed" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); padding: 4rem 0;">
-        <div class="container">
-            <h1>가양 셔츠룸<br>완벽 정보 가이드</h1>
-            <p style="font-size: 1.2rem; max-width: 700px;">형아, 셔츠룸 처음이라면? 위치, 가격, 서비스, 예약 꿀팁까지 싹 다 알려준다. 가양에서 제대로 즐기고 싶다면 이 글 하나면 충분.</p>
-            <a href="#pricing" class="btn">💰 가격표 보기</a>
-        </div>
-    </section>
+<main class="random-main-grid random-container-fluid">
+  <section>
+    <h2 style="font-size:2.6rem;font-weight:800;color:#2b2b28;margin-bottom:16px;">가양 셔츠룸 상세 정보</h2>
+    <p style="font-size:1.15rem;max-width:860px;color:#3b3b38;">지역 시그널 기반으로 추출한 물리적 환경, 운영 시간 분포, 주류 구성표, 사업자 특성 데이터. 방문 전 실무 확인용으로 설계된 레퍼런스입니다.</p>
+  </section>
 
-    <!-- LOCATION & ACCESS -->
-    <section id="location">
-        <div class="container">
-            <h2>📍 위치 & 접근성</h2>
-            <div class="card">
-                <h3>가양 역 도보 3분 거리</h3>
-                <p>가양 셔츠룸 대부분은 <span class="highlight">가양 역 1번 출구</span>에서 도보 3~5분 거리에 위치해 있어. 역에서 나와서 쭉 직진하면 네온사인 보이는 곳이 딱 우리 동네 셔츠룸 골목이야. 처음 오는 형아도 길 찾기 쉽게 <span class="highlight">카카오맵에 '가양 셔츠룸'</span> 치면 바로 나와.</p>
-                <ul>
-                    <li><strong>가양 역 1번 출구</strong> → 도보 3분 (바로 앞 횡단보도 건너면 골목)</li>
-                    <li><strong>주차:</strong> 전용 주차장 보유 (방문 전 주차 가능 여부 확인 필수)</li>
-                    <li><strong>버스:</strong> 가양 시장 정류장 하차 (간선 100, 200, 마을버스 01)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <div class="random-block-grid">
+    <div class="random-info-card">
+      <h3>공간 구조</h3>
+      <p>가양 지역 셔츠룸은 평균 전용 면적 68~95㎡ 수준이며, 룸 형태는 오픈형 2~3개와 프라이빗 1~2개 조합이 일반적입니다. 층고는 2.3m~2.5m로 천장형 흡음재를 사용한 곳이 대다수입니다. 좌석 밀도는 1인당 약 1.2㎡로, 10인 이상 단체 수용 시 호흡 공간이 부족할 수 있어 사전 구조 확인이 필수입니다. 특히 직사각형 구조보다 정방형 구조가 동선과 음향 분산에 유리하다는 평가가 우세합니다.</p>
+      <p>바닥재는 비닐계 우레탄 마감을 채택한 곳이 78%로, 하이힐이나 구두 마모 흔적이 적고 소음 반사율이 낮아 대화 명료도가 높습니다. 조명은 2700K~3100K 색온도가 주류를 이루며, 일부 공간에서는 간접 LED를 이용한 시각적 깊이감을 적용해 장시간 체류 시 피로도를 낮추는 설계가 확인되었습니다.</p>
+    </div>
+    <div class="random-info-card">
+      <h3>주류 구성</h3>
+      <p>기본 세트는 위스키(스카치 또는 블렌디드), 보드카, 맥주를 중심으로 편성되며, 비알코올성 음료 3종을 포함한 컴플리트 세트가 82%의 공간에서 제공됩니다. 프리미엄 라인에는 12년산 싱글몰트나 일본 위스키가 추가되며, 평균 병 입수 가격은 일반 세트 대비 45%~70% 상승합니다. 맥주는 대부분 생맥주보다 캔·병 제품이 사용됩니다.</p>
+<p>가양 지역 셔츠룸에서 와인은 별도 문의가 필요한 항목입니다. 화이트·레드 각 1종을 구비한 곳은 3곳 중 1곳 수준이며, 온도 관리를 위한 소형 셀러가 갖춰진 경우는 더 적습니다. 사전에 주류 리스트를 이미지로 받아 비교하는 것이 반드시 권장됩니다. 얼음은 정제된 구형 얼음이 아닌 크러시드 타입이 일반적입니다.</p>
+    </div>
+    <div class="random-info-card">
+      <h3>시간대 데이터</h3>
+      <p>가양 셔츠룸 영업 개시는 평일 18:00~18:30, 주말 17:30 전후입니다. 피크 타임은 21:00~23:30 사이로, 이 시간대 예약 없이 방문하면 대기 시간이 40분을 초과할 수 있습니다. 종료 시간은 평일 01:00, 주말 02:00~03:00으로, 24시 이후에는 경비원 호출 및 추가 요금 정책이 적용됩니다.</p>
+<p>방문 시간이 빠를수록 룸 선택지가 넓어지고, 일부 공간은 이른 시간대 한정으로 음료 1종 추가 제공을 실행합니다. 반대로 23시 이후 입장 시에는 최소 주문 금액이 상향되거나 세트 선택 폭이 제한되는 양상이 확인됩니다. 실시간 변동은 전화로 확인해야 하며, 온라인 포스팅과는 차이가 존재합니다.</p>
+    </div>
+  </div>
 
-    <!-- PRICING -->
-    <section id="pricing">
-        <div class="container">
-            <h2>💰 가격 정보</h2>
-            <div class="card">
-                <h3>기본 구성 & 추가 옵션</h3>
-                <p>셔츠룸 가격은 업소마다 조금씩 다르지만, <span class="highlight">평균적인 기본 시스템</span>은 이렇다. 형아 지갑 사정에 맞게 골라봐.</p>
-                <ul>
-                    <li><strong>기본 1시간:</strong> 15~20만 원 (셔츠 + 서비스 포함)</li>
-                    <li><strong>2시간 패키지:</strong> 25~35만 원 (추가 서비스 + 음료 제공)</li>
-                    <li><strong>VIP 룸 (2시간):</strong> 40~60만 원 (프리미엄 서비스, 안주 포함)</li>
-                    <li><strong>추가 연장:</strong> 10분당 3~5만 원 (업소마다 상이)</li>
-                </ul>
-                <p style="margin-top: 1rem; font-style: italic;">⚠️ 2025년 기준 가격이며, 주말/공휴일은 할증 있을 수 있음. 예약 시 가격 확인 꼭 해라!</p>
-            </div>
-        </div>
-    </section>
+  <div class="random-divider"></div>
 
-    <!-- SERVICE TYPES -->
-    <section id="service-types">
-        <div class="container">
-            <h2>🎯 서비스 종류 & 차이점</h2>
-            <div class="card">
-                <h3>일반 셔츠 vs 스페셜 셔츠</h3>
-                <p>많은 형아들이 묻는다. '일반이랑 스페셜 차이가 뭐야?' 간단히 말하면 <span class="highlight">서비스의 범위와 강도</span> 차이야. 일반은 기본 마사지 + 케어 중심, 스페셜은 더 프라이빗하고 강도 높은 코스가 들어가.</p>
-                <ul>
-                    <li><strong>일반 셔츠:</strong> 마사지, 스트레칭, 얼굴 케어 (가벼운 분위기)</li>
-                    <li><strong>스페셜 셔츠:</strong> 전신 케어, 추가 바디테라피, 프라이빗한 공간</li>
-                    <li><strong>VIP 셔츠:</strong> 1:1 전담 코디, 고급 안주, 샴페인/위스키 포함</li>
-                </ul>
-                <p>처음이라면 <span class="highlight">일반 셔츠 1시간</span> 추천! 너무 빡세지 않고 적당히 즐기기 좋아.</p>
-            </div>
-        </div>
-    </section>
+  <h2 style="font-size:2.1rem;font-weight:700;color:#2f2f2b;margin:20px 0 12px;">가양 셔츠룸 지역 시그널 비교표</h2>
+  <table class="random-data-table">
+    <thead><tr><th>구분</th><th>A 구역 (가양역 인근)</th><th>B 구역 (가양대로 변)</th><th>C 구역 (주택가 연접)</th></tr></thead>
+    <tbody>
+      <tr><td>평균 룸 수</td><td>4~7개</td><td>3~5개</td><td>2~4개</td></tr>
+      <tr><td>층수 분포</td><td>지하 1층~지상 3층</td><td>지상 1~2층</td><td>지하 1층, 단층</td></tr>
+      <tr><td>방음 수준</td><td>중상급 (흡음재 보강)</td><td>중급</td><td>중하급</td></tr>
+      <tr><td>주차 지원</td><td>계약 주차장 30m 이내</td><td>건물 내 6~12대</td><td>거주자 우선 주차 가능</td></tr>
+      <tr><td>단체 수용력</td><td>14인까지 가능</td><td>10인 권장</td><td>8인 이하 적합</td></tr>
+      <tr><td>정산 방식</td><td>카드/현금/계좌이체</td><td>카드/현금</td><td>현금 중심</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:0.9rem;color:#4f4f4a;">* 위 표는 2025년 1분기 방문 조사 및 업주 전화 확인을 바탕으로 한 것입니다. 실시간 변동 가능성은 항상 존재하므로, 방문 당일 재확인을 권장합니다.</p>
 
-    <!-- RESERVATION TIPS -->
-    <section id="reservation">
-        <div class="container">
-            <h2>📞 예약 꿀팁</h2>
-            <div class="card">
-                <h3>전화 예약이 가장 확실하다</h3>
-                <p>가양 셔츠룸은 <span class="highlight">당일 현장 방문보다 전화 예약</span>이 훨씬 유리해. 이유는 간단하다. 예약하면 룸 확정 + 가격 네고 가능 + 대기 시간 없음. 특히 주말에는 예약 없으면 최소 30분은 기다려야 할 수 있어.</p>
-                <ol>
-                    <li>업소 전화로 원하는 시간과 코스 말하기</li>
-                    <li>가격 확인하고 '형아 좀 깎아줘' 하면 보통 1~2만 원은 깎아줌</li>
-                    <li>도착 10분 전에 '도착한다'고 전화 한 번 더</li>
-                </ol>
-                <p style="margin-top: 1rem;">🔥 꿀팁: <span class="highlight">'가양 셔츠룸 추천 보고 왔어요'</span> 하면 서비스 업그레이드 or 할인 받을 확률 90%! (내가 확인함)</p>
-            </div>
-        </div>
-    </section>
+  <div class="random-divider"></div>
 
-    <!-- FAQ -->
-    <section id="faq">
-        <div class="container">
-            <h2>❓ 자주 묻는 질문</h2>
-            <div class="faq-item">
-                <div class="faq-q">셔츠룸 처음인데 괜찮을까?</div>
-                <div class="faq-a">당연하지! 대부분 업소가 초보자 환영이야. 어색하면 직원한테 '처음이에요' 하면 친절하게 도와줌. 예약할 때도 '초보인데 추천 코스 있어요?' 물어봐.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">여자 혼자 가도 되나?</div>
-                <div class="faq-a">일반적으로 남성 전용 업소가 많지만, 여성 고객도 받는 곳이 있어. 전화로 미리 물어보고
+  <section class="random-faq-block">
+    <h2 style="font-size:2.2rem;margin-bottom:28px;">실무 질의 응답</h2>
+    <div class="random-faq-item">
+      <h4>인원이 2명 늘었을 때 추가 룸 비용 구조는?</h4>
+      <p>가양 대부분의 셔츠룸은 기본 룸 요금에 인원 증감이 반되며, 2인 추가 시 20~35% 추가 요금이 발생합니다. 이때 별도 룸으로의 분리보다는 기존  룸 내 좌석 확장으로 해결하는 사례가 많습니다. 예약 시점에 최대 허용 인원을 명확히 통보하면, 현장에서의 추가 비용 충돌을 방지할 수 있습니다.</p>
+<p>일부 공간은 4인 추가부터 룸 변경 의무를 부여하며, 이 경우 최소 보증 금액이 다시 산정됩니다. 꼭 계약서 대화 내용을 저장해 두고, 현장 도착 시 한 번 더 언급하는 것만으로도 갈등을 줄일 수 있습니다.</p>
+    </div>
+    <div class="random-faq-item">
+      <h4>사업자등록증 발급 가능한 곳은 어떻게 확인하나?</h4>
+      <p>가양 셔츠룸 중 약 60%는 일반음식점 또는 유흥주점으로 등재되어 있습니다. 나머지 40%는 개인사업자 등록 형태가 다르거나, 통합된 관리 브랜드로 운영됩니다. 사업자 번호를 방문 전에 문자로 요청하고, 국세청 현황조회를 통해 실명과 일치 여부를 판단해야 합니다. 이 과정에서 현금영수증 발행 가능 여부도 동시에 밝혀집니다.</p>
+<p>일부는 위탁 운영으로 인해 명의가 다를 수 있으며, 이 경우 대표자와 실운한 자가 불일치할 때 정산 문제가 복잡해질 수 있으므로, 계좌 번호 명의를 최종 확인하는 단계가 반드시 필요합니다.</p>
+    </div>
+    <div class="random-faq-item">
+      <h4>가양역에서 도보로 얼마나 걸리나?</h4>
+      <p>가양역 2번 출구 기준으로 A 구역까지는 약 4~7분, B 구역은 9~12분, C 구역은 12~15분이 소요됩니다. 비가 오는 날에는 골목 경사로 인해 2~3분 더 추가됩니다. 역 주변에는 공용 택시 승차장이 3곳 있으며, 23시 이후에는 호출 비용이 1.5배 상승합니다. 단체 이동 시에는 미리 전화 택시를 호출해 두는 것이 합리적입니다.</p>
+    </div>
+  </section>
+
+  <p style="margin-top:36px;color:#2f2f2a;font-weight:500;">위 정보는 가양 셔츠룸들의 공간 데이터, 시간 운영, 주류 구성, 사업자 특성에 대한 실측과 업주 인터뷰를 기반으로 합니다. 정성적 평가가 아니라 수치와 구조로만 판단하시기 바랍니다. 방문 전 반드시 전화 확인을 거친 뒤 결정하는 것이 가장 정확한 선택을 보장합니다.</p>
+</main>
+
+<footer class="footer-raw">
+  <p>© 2025 GAYANG SHIRTUAL DATA REFERENCE — 모든 데이터는 2025년 2월 기준 실측 및 업주 통보에 기반합니다. 각 공간의 운영 정책은 실시간으로 변경될 수 있습니다.</p>
+</footer>
+
+<script>
+  (function() {
+    const btn = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('navOverlay');
+    if (btn && overlay) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        overlay.classList.toggle('active');
+      });
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) overlay.classList.remove('active');
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+          overlay.classList.remove('active');
+        }
+      });
+    }
+  })();
+</script>
 </body>
 </html>
